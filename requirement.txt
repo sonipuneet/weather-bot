@@ -1,0 +1,18 @@
+Python application requirement:
+--------------------------------------------------------------
+
+
+Open Weather Map web api for getting weather information and reports
+
+Server tunelling to localhost - Ngrok
+
+NLP Platform - API AI
+
+Backend Server - Flash
+
+Deployment - Facebook Messenger
+
+
+--------------------------------------------------------------
+
+
