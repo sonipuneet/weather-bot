@@ -1,0 +1,3 @@
+https://medium.com/@apcelent/how-to-create-a-facebook-messenger-bot-with-python-flask-3b3a10354c2d
+
+https://www.datacamp.com/community/tutorials/facebook-chatbot-python-deploy
