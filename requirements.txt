@@ -1,4 +1,4 @@
-flask==0.12
+flask==1.0
 requests==2.14.2
 pyowm==2.0.0
 apiai==1.2.3
