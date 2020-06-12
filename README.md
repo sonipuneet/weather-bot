@@ -16,19 +16,21 @@ A weather bot application developed in python to give the weather reports on fac
 5. Facebook Messenger Webhook Integration
 
 # Set up tunnelling to localhost
-
+```
 sudo apt-get update
+```
+```
 sudo apt-get install ngrok-client
-
+```
 # Run the Server using the following commands
-
+```
 ./ngrok http -bind-tls=true 5000
-
+```
 
 # Run the Application using the following commands
-
+```
 python bot.py
-
+```
 
 # References
 
