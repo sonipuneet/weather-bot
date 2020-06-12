@@ -27,7 +27,7 @@ def handle_verification():
     Successful when verify_token is same as token sent by facebook app
     '''
     if (request.args.get('hub.verify_token', '') == VERIFY_TOKEN):     
-        print("succefully verified")
+        print("successfully verified")
         return request.args.get('hub.challenge', '')
     else:
         print("Wrong verification token!")

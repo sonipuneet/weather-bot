@@ -1,8 +1,16 @@
-# Facebook Messenger Chatbot
+#Author - Puneet Soni
+#https://github.com/sonipuneet  || https://puneetsoni.com
+# Facebook Messenger Chat-bot
+# This project was developed for only learning and educational purpose @2020
 
-import sys, json, requests
-from flask import Flask, request
+import json
+import os
+
+import requests
+import sys
+
 import pyowm
+from flask import Flask, request
 
 try:
     import apiai
@@ -14,11 +22,11 @@ except ImportError:
 
 app = Flask(__name__)
 
-PAT = 'your_facebook_page_access_token'
+PAT = 'EAAEOo1ECtt8BACsZC1QNcZCCzPFdYCsmPiuAzSRG8v75MXqZA0DZA7ifkEGZBv4aGbmyykS2d5ZBr3Cqcpj5FUVDeUhBJGxMLGURqQn1ZAFj8Pq7mfb5UeyHJlikCsLoLEaIn3m4GHI2cdU1HclqB4kva18KlTZCoZCv2kA2iiRJGzbvQTOWYlrkGMYBEWrnc64EZD'
 
-CLIENT_ACCESS_TOKEN = 'your_api_access_key'
+CLIENT_ACCESS_TOKEN = '85d1f06976dc40a5959d85bbd27098a9'
 
-VERIFY_TOKEN = 'your_webhook_verification_token'
+VERIFY_TOKEN = '1234567890'
 
 ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 
@@ -30,7 +38,7 @@ def handle_verification():
     Successful when verify_token is same as token sent by facebook app
     '''
     if (request.args.get('hub.verify_token', '') == VERIFY_TOKEN):
-        print("succefully verified")
+        print("successfully verified")
         return request.args.get('hub.challenge', '')
     else:
         print("Wrong verification token!")
@@ -95,7 +103,7 @@ def parse_user_message(user_text):
             input_city = response['result']['parameters']['geo-city']
             print("City ", input_city)
 
-            owm = pyowm.OWM('edd197717da7951b85f8f6936fc27b13')  # You MUST provide a valid API key
+            owm = pyowm.OWM('30d6554e8e95b90f1b6cc54ad82c1d84')  # You MUST provide a valid API key
 
             forecast = owm.daily_forecast(input_city)
 
