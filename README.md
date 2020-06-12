@@ -5,6 +5,8 @@ A weather bot application developed in python to give the weather reports on fac
 
 <h2>Weather bot work flow -</h2>
 
+<h2>Technologies used for the bot development</h2>
+
 1. Flask
 
 2. API AI
@@ -30,7 +32,7 @@ sudo apt-get install ngrok-client
 ./ngrok http -bind-tls=true 5000
 ```
 
-<h2>Run the Application using the following commands</h2>
+<h2>Run the script</h2>
 
 ```bash
 python bot.py
