@@ -1,9 +1,9 @@
 # weather-bot
 A weather bot application developed in python to give the weather reports on facebook messenger
 
-<b> Weather-Bot Link - <a>m.me/113180860428423</a> </b>
+<b> Weather-Bot Link - </b> <a> m.me/113180860428423 </a>
 
-# Weather bot work flow -
+<h2>Weather bot work flow -</h2>
 
 1. Flask
 
@@ -15,19 +15,19 @@ A weather bot application developed in python to give the weather reports on fac
 
 5. Facebook Messenger Webhook Integration
 
-# Set up tunnelling to localhost
+<h2>Set up tunnelling to localhost</h2>
 ```
 sudo apt-get update
 ```
 ```
 sudo apt-get install ngrok-client
 ```
-# Run the Server using the following commands
+<h2>Run the Server using the following commands</h2>
 ```
 ./ngrok http -bind-tls=true 5000
 ```
 
-# Run the Application using the following commands
+<h2>Run the Application using the following commands</h2>
 ```
 python bot.py
 ```
